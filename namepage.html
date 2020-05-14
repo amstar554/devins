@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this is for exercises xp ninja - W6D1</title>
+</head>
+<body>
+    <p>Add your details below: </p>
+    <form method="post">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit">
+    </form>
+    <p> trial boye</p>
+
+    {% if datestring|length > 0 %}
+        <p>This is your DOB: {{datestring}}</p>
+        <p>You've lived for: {{deltayear}} </p>
+    {% endif %}
+</body>
+</html>
